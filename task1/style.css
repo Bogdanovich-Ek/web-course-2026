@@ -1,1 +1,86 @@
+* { box-sizing: border-box; }  
 
+body {  
+  margin: 0;  
+  font-family: Arial, sans-serif;  
+  color: #222; 
+  background: #f7f7f9; 
+}
+
+header {  
+  display: flex; 
+  flex-direction: column;  
+  align-items: center;  
+  gap: 8px; 
+  padding: 32px 16px;  
+  background: #e0e7ff;  
+}
+
+header img {  
+  width: 150px;  
+  height: 150px;  
+  border-radius: 50%; 
+}
+
+.slogan {  
+  font-style: italic; 
+}
+
+nav { 
+  display: flex; 
+  justify-content: center;  
+  flex-wrap: wrap;  
+  gap: 16px;  
+  padding: 12px;
+  background: #ffffff;
+}
+
+main { 
+  display: flex;
+  flex-direction: column; 
+  gap: 24px; 
+  max-width: 800px; 
+  margin: 0 auto;  
+  padding: 24px 16px;
+}
+
+section {  
+  background: #ffffff;
+  border-radius: 8px; 
+  padding: 16px 20px;
+}
+
+#skills {  
+  display: flex;
+  flex-wrap: wrap;  
+  align-items: center;
+  gap: 8px;
+}
+
+.skill { 
+  background: #e0e7ff;
+  border-radius: 999px; 
+  padding: 6px 14px; 
+}
+
+footer {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 24px;
+  background: #222; 
+}
+
+footer h2 {  
+  color: #ffffff;  
+}
+
+footer a {  
+  color: #93c5fd;  
+}
+
+footer a:hover {  /* :hover = стиль, когда курсор наведён на ссылку (требование задания) */
+  color: #ffffff;  /* белеет при наведении */
+  text-decoration: underline;  /* и подчёркивается */
+}
