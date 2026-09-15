@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nana Osaki — Black Stones | Responsive Landing Page</title>
+  <meta name="description" content="Responsive one-page landing dedicated to Nana Osaki, the lead vocalist of Black Stones from Ai Yazawa's NANA. Lab work 2 — adaptive layout (CSS Grid + Flexbox, Mobile First).">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%230b0b0d'/%3E%3Ctext%20x='16'%20y='23'%20font-family='Arial'%20font-size='18'%20font-weight='bold'%20fill='%23ff2e7e'%20text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Oswald:wght@500;600;700&amp;family=Playfair+Display:ital,wght@1,500;1,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#hero">NANA</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label class="nav-burger" for="nav-toggle" aria-label="Open menu">
+      <span class="bars"></span>
+    </label>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#hero">Home</a>
+      <a href="#synopsis">Synopsis</a>
+      <a href="#history">History</a>
+      <a href="#media">Media</a>
+      <a href="#style">Style</a>
+      <a href="#discography">Discography</a>
+    </nav>
+
+    <a class="btn btn-accent header-cta" href="https://com-x.life/reader/11620/240514" target="_blank" rel="noopener">Read NANA</a>
+  </header>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <p class="hero-eyebrow">Shueisha · Cookie magazine presents</p>
+
+      <div class="hero-stage">
+        <h1 class="hero-name">NANA <span>Osaki</span></h1>
+        <img class="hero-figure" src="img/hero-figure.png"
+             alt="Cut-out silhouette of Nana Osaki in sunglasses and a leopard-print coat holding a cigarette">
+      </div>
+
+      <ul class="laurels" aria-label="Awards and status">
+        <li><strong>Best shōjo manga</strong><span>Shueisha · 2000</span></li>
+        <li><strong>Cult status</strong><span>25 years of NANA</span></li>
+        <li><strong>Readers’ choice</strong><span>Cookie Magazine</span></li>
+      </ul>
+    </section>
+
+    <section class="synopsis" id="synopsis">
+      <p class="section-label">Synopsis</p>
+      <div class="split-grid">
+        <blockquote class="pretty-quote">
+          <p>“Hey Hachi... They say people realize the value of something only after they
+            lose it, but I think it’s when you face it once more that you truly recognize it.
+            If I could see everyone now I’d depend on them again for sure. I’m scared of that.
+            That’s why I can’t move from this spot.”</p>
+          <cite>— Nana Osaki, Chapter 41</cite>
+        </blockquote>
+        <div class="split-text">
+          <p>Nana Osaki (大崎 ナナ, おおさき ナナ, Ōsaki Nana) is one of the two titular
+            protagonists of the NANA series. She is the lead vocalist of the initially
+            underground punk band Black Stones, who moved to Tokyo to pursue her ambition
+            of becoming a famous singer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="media" id="media">
+      <img class="media-side media-side-left" src="img/nana-coloring.jpg"
+           alt="Cropped side artwork: Nana Osaki at the microphone" aria-hidden="true">
+      <img class="media-side media-side-right" src="img/nana-black-stones.jpg"
+           alt="Cropped side poster: Nana Osaki with a guitar case" aria-hidden="true">
+
+      <figure class="feature-card">
+        <img src="img/manga.jpg" alt="Manga panel of Nana Osaki performing live with Black Stones">
+        <a class="play" href="https://com-x.life/reader/11620/240514" target="_blank" rel="noopener"
+           aria-label="Read NANA chapter 1 on com-x.life">
+          <svg viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0 L12 7 L0 14 Z"/></svg>
+        </a>
+        <figcaption class="feature-caption">
+          <strong>NANA · Chapter 1</strong>
+          <span>Ai Yazawa / Japan</span>
+        </figcaption>
+      </figure>
+
+      <p class="media-links">
+        <a class="big-link" href="https://com-x.life/reader/11620/240514" target="_blank" rel="noopener">
+          Read on com-x.life <span aria-hidden="true">↗</span>
+        </a>
+      </p>
+    </section>
+
+    <section class="history" id="history">
+      <p class="section-label">History</p>
+      <div class="split-grid">
+        <h2>From a provincial town to the Tokyo stage.</h2>
+        <div class="split-text">
+          <p>Abandoned by her mother and raised by a strict grandmother, Nana grew up in a
+            small provincial town. Falsely accused and expelled from school, she lost
+            everything before she ever had a chance — except music.</p>
+          <p>At sixteen she founded Black Stones with Yasu and Nobu, fell in love with
+            guitarist Ren, and boarded the night train to Tokyo — chasing fame, a stage of
+            her own, and the one person who left to become a star first.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <p class="section-label">Gallery</p>
+      <div class="gallery-grid">
+        <article class="gallery-card">
+          <div class="gallery-thumb">
+            <img src="img/nana-coloring.jpg" alt="Red-toned artwork of Nana Osaki singing into a microphone">
+          </div>
+          <p class="gallery-meta"><span class="tag">Artwork</span><time datetime="2025-10-17">17-10-2025</time></p>
+          <h3>The voice of Black Stones</h3>
+          <p class="gallery-text">Red lipstick, chained chokers and a microphone — the
+            live-house portrait of Black Stones’ frontwoman.</p>
+          <a class="more" href="https://com-x.life/reader/11620/240514" target="_blank" rel="noopener">
+            View more <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="gallery-card">
+          <div class="gallery-thumb">
+            <img src="img/nana-black-stones.jpg" alt="Black and red poster of Nana Osaki in a punk outfit with a guitar case">
+          </div>
+          <p class="gallery-meta"><span class="tag">Poster</span><time datetime="2025-10-17">17-10-2025</time></p>
+          <h3>Black Stones punk uniform</h3>
+          <p class="gallery-text">A leather jacket, a plaid skirt and a guitar case — the
+            uniform of Tokyo’s most stubborn underground band.</p>
+          <a class="more" href="https://com-x.life/reader/11620/240514" target="_blank" rel="noopener">
+            View more <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="style" id="style">
+      <p class="section-label">Style</p>
+      <div class="split-grid split-media-left">
+        <div class="split-media">
+          <img src="img/style-chibi.jpg" alt="Chibi sticker of Nana Osaki with cat ears, a choker and a red plaid shirt">
+        </div>
+        <div class="split-body">
+          <h2>Seven Stars, red lipstick &amp; Vivienne Westwood.</h2>
+          <p>A punk of the ’70s in the spirit of Sid Vicious: Vivienne Westwood corsets,
+            a spiked choker, red lipstick and a lotus tattoo on her left arm. She smokes
+            Seven Stars, mixes lace with leather and turns every Tokyo sidewalk into
+            a runway.</p>
+          <ul class="chips" aria-label="Style keywords">
+            <li>Vivienne Westwood</li>
+            <li>Chokers</li>
+            <li>Seven Stars</li>
+            <li>Lotus tattoo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="discography" id="discography">
+      <p class="section-label">Discography</p>
+      <div class="split-grid split-media-left">
+        <div class="split-media">
+          <img src="img/rose-spotify.jpg" alt="Spotify card with lyrics of the song Rose performed by Anna Tsuchiya">
+        </div>
+        <div class="split-body">
+          <h2>The voice behind Nana.</h2>
+          <p>In the anime adaptation Nana’s songs were performed by Anna Tsuchiya —
+            her track “Rose” became the anthem of Black Stones.</p>
+          <ol class="tracklist">
+            <li><i>01</i> Rose <span>Anna Tsuchiya</span></li>
+            <li><i>02</i> Kuroi Namida <span>Anna Tsuchiya</span></li>
+            <li><i>03</i> Zero <span>Anna Tsuchiya</span></li>
+            <li><i>04</i> Stand by Me! <span>Anna Tsuchiya</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="section-label">Contact</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Links.</h2>
+          <p>Read the manga that started it all:</p>
+          <a class="big-link" href="https://com-x.life/reader/11620/240514" target="_blank" rel="noopener">
+            NANA — chapter on com-x.life <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Nana Komatsu" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="hachi@blast.tokyo" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Blast or Trapnest?" required></textarea>
+
+          <button class="btn btn-accent" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="logo">NANA</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#hero">Home</a>
+        <a href="#synopsis">Synopsis</a>
+        <a href="#history">History</a>
+        <a href="#media">Media</a>
+        <a href="#style">Style</a>
+        <a href="#discography">Discography</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-note"> NANA © Ai Yazawa / Shueisha · Cookie Magazine.</p>
+    </div>
+  </footer>
+
+  <p class="bp" aria-hidden="true">Screen:</p>
+
+</body>
+</html>
