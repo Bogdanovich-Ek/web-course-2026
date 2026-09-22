@@ -73,7 +73,6 @@ h1 {
   display: none;
 }
 
-/* --- Фильтры --- */
 .filters {
   display: flex;
   gap: 8px;
@@ -101,7 +100,6 @@ h1 {
   color: #fff;
 }
 
-/* --- Счётчик --- */
 .counter {
   text-align: center;
   color: #555;
@@ -109,7 +107,6 @@ h1 {
   margin-bottom: 12px;
 }
 
-/* --- Список задач --- */
 .todo-list {
   list-style: none;
 }
