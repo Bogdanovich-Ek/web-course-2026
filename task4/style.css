@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+  background: #eef1f6;
+  color: #1f2430;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.game {
+  width: 100%;
+  max-width: 460px;
+  height: fit-content;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 8px 24px rgba(31, 36, 48, 0.1);
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.rules {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #5b6472;
+  margin-bottom: 20px;
+}
+
+.guess-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.guess-input {
+  flex: 1;
+  min-width: 0;
+  font-size: 20px;
+  letter-spacing: 6px;
+  padding: 10px 14px;
+  border: 2px solid #d4d9e2;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.guess-input:focus {
+  border-color: #4a6cf7;
+}
+
+.guess-input:disabled {
+  background: #f1f3f7;
+  color: #9aa2b1;
+}
+
+.button {
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #4a6cf7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.button:hover {
+  background: #3b5be0;
+}
+
+.button:disabled {
+  background: #b9c3f5;
+  cursor: not-allowed;
+}
+
+.button-secondary {
+  background: #eef1f6;
+  color: #1f2430;
+}
+
+.button-secondary:hover {
+  background: #e2e7ef;
+}
+
+.message {
+  min-height: 22px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.message.error {
+  color: #d64545;
+}
+
+.message.win {
+  color: #1e9e58;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.attempts {
+  font-size: 15px;
+  color: #5b6472;
+}
+
+.attempts b {
+  color: #1f2430;
+  font-size: 17px;
+}
+
+.history-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.history-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 14px;
+  background: #f5f7fa;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.attempt-number {
+  color: #9aa2b1;
+  font-size: 13px;
+  min-width: 26px;
+}
+
+.attempt-guess {
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.attempt-result {
+  margin-left: auto;
+  font-size: 14px;
+}
+
+.history-empty {
+  color: #9aa2b1;
+  font-size: 14px;
+  padding: 4px 2px;
+}
