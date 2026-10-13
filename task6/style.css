@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #171a23;
+  color: #e8eaf0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.game {
+  text-align: center;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.score-label {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.score-label span {
+  font-weight: bold;
+  color: #ffd166;
+}
+
+.board-wrapper {
+  position: relative;
+  width: 400px;
+  margin: 0 auto 14px;
+}
+
+canvas {
+  display: block;
+  background: #1f2430;
+  border: 2px solid #3a4152;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: rgba(23, 26, 35, 0.88);
+  border-radius: 8px;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.overlay-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.overlay-score {
+  font-size: 18px;
+}
+
+.restart-btn {
+  margin-top: 8px;
+  padding: 10px 32px;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: #ffd166;
+  color: #171a23;
+  cursor: pointer;
+}
+
+.restart-btn:hover {
+  background: #ffe09a;
+}
+
+.hint {
+  color: #9aa1b2;
+}
