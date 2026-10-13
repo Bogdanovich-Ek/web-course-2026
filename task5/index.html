@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная работа №5 — Игра Simon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <h1>Игра «Simon»</h1>
+    <p class="subtitle">Компьютер показывает последовательность — повторите её в том же порядке</p>
+
+    <p class="level-label">Уровень: <span id="level">0</span></p>
+
+    <div class="board locked" id="board">
+      <button class="pad pad-green"  data-index="0" aria-label="Зелёный сектор"></button>
+      <button class="pad pad-red"    data-index="1" aria-label="Красный сектор"></button>
+      <button class="pad pad-yellow" data-index="2" aria-label="Жёлтый сектор"></button>
+      <button class="pad pad-blue"   data-index="3" aria-label="Синий сектор"></button>
+    </div>
+
+    <p class="status" id="status">Нажмите «Старт», чтобы начать</p>
+
+    <div class="controls">
+      <button class="start-btn" id="start-btn">Старт</button>
+      <label class="sound-toggle">
+        <input type="checkbox" id="sound-toggle" checked> Звук
+      </label>
+    </div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
