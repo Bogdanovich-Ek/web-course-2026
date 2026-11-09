@@ -27,7 +27,7 @@ form.addEventListener('submit', (event) => {
   }
   warning.classList.add('hidden');
 
-  todos.push({ id: nextId++, text: text, completed: false });
+  todos.upshift({ id: nextId++, text: text, completed: false });
   input.value = '';
   render();
 });
